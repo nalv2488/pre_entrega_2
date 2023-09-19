@@ -103,3 +103,29 @@ nav{
 th{
     width: 200px;
 }
+
+.container-cards {
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    max-width: 100%;
+}
+
+.card-img-top{
+    height: 200px;
+    width: 300px;
+}
+
+@media (max-width:767px) {
+    .container-cards {
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
