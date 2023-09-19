@@ -8,6 +8,14 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.nav-link:hover{
+    text-decoration: none;
+    color: #37003c;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
 img{
     max-width: 100%;
 }
