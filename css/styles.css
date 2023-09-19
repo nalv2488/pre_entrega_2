@@ -129,3 +129,12 @@ th{
     }
 }
 
+.team-logo-img{
+    width: 100px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.team-logo-img:hover{
+    width: 120px;
+}
