@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="icon" type="image/x-icon" href="img/pl-main-logo.png">
+    
     <!-- CSS Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
@@ -12,53 +14,36 @@
 
     <!-- Estilo CSS -->
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
+    <title>Premier League</title>
 </head>
 <body>
-    <header>
+    <header class="container d-flex justify-content-between">
         <a class="nav-color" href="index.html">
             <img src="./img/pl-main-logo.png" alt="Logo EPL" class="logo-epl-main">
         </a>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-color">
+        <nav class="navbar navbar-expand-lg nav-color">
             <div class="container-fluid nav-color">          
                 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="bi bi-grid bi-brid-cl"></i>
             </button>
             <div class="collapse navbar-collapse nav-color" id="navbarNav">
                 <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link nav-color" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-color" href="./pages/equipos.html">Equipos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-color" href="./pages/equipos.html">Torneo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-color" href="./pages/equipos.html">Equipos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-color" href="./pages/equipos.html">Equipos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-color" href="./pages/equipos.html">Equipos</a>
-                </li>
-
-                <li class="li-nav-header">
-                    <a href="./pages/equipos.html">Equipos</a>
-                </li>
-                <li class="li-nav-header">
-                    <a href="./pages/torneo.html">Torneo</a>
-                </li>
-                <li class="li-nav-header">
-                    <a href="./pages/estadios.html">Estadios</a>
-                </li>
-                <li class="li-nav-header">
-                    <a href="./pages/historia.html">Historia</a>
-                </li> 
-                
+                    <li class="nav-item">
+                        <a class="nav-link nav-color" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-color" href="./pages/equipos.html">Equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-color" href="./pages/equipos.html">Torneo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-color" href="./pages/equipos.html">Estadios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-color" href="./pages/equipos.html">Historia</a>
+                    </li>                
                 </ul>
             </div>
             </div>
@@ -68,44 +53,126 @@
     <section class="container">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
+                <div class="carousel-item active">
+                <img src="./img/anfield-inside.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/carrousel-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/etihad-inside.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
     </section>
+
     <section class="container">
 
     </section>
 
+    <section class="container my-5">
+        <h3 class="h3-pl">Ultimas noticias</h3>
+        <div class="container-cards">
+            <div class="card" style="width: 18rem;">
+                <img src="./img/ars-new-1.webp" class="card-img-top" alt="Victoria Arsenal">
+                <div class="card-body">
+                    <p class="card-text">Leandro Trossard salió de la banca para anotar el gol decisivo cuando el Arsenal venció al Everton 1-0 para lograr su primera victoria en Goodison Park en seis años, moviendo a los Gunners al cuarto lugar y dejando a los Toffees sin victorias entre los tres últimos.</p>
+                    <a href="#" class="btn btn-primary">Más</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/rec-new-2.webp" class="card-img-top" alt="Record 0 0">
+                <div class="card-body">
+                    <p class="card-text">Los porteros Neto y Robert Sánchez fueron los héroes cuando el AFC Bournemouth y el Chelsea jugaron el primer empate sin goles de la temporada 2023/24 a pesar de que hubo 10 tiros a portería en el Vitality Stadium.</p>
+                    <p class="card-text">En el partido número 47 de la campaña, iguala el récord de la Premier League por el inicio de temporada más largo sin un 0-0.</p>
+                    <a href="#" class="btn btn-primary">Más</a>
+                </div>
+            </div>
+
+            
+            <div class="card" style="width: 18rem;">
+                <img src="img/tot-new-3.webp" class="card-img-top" alt="Victoria Tottenham">
+                <div class="card-body">
+                    <p class="card-text">Una semana emotiva para Richarlison tuvo un final de cuento de hadas cuando salió del banco para inspirar el último cambio en la historia de la Premier League.</p>
+                    <p class="card-text">El delantero del Tottenham Hotspur fue fotografiado llorando tras ser sustituido por Brasil en un encuentro internacional, y posteriormente reveló que había pasado "un momento turbulento fuera del campo".</p>
+                    <a href="#" class="btn btn-primary">Más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <h3 class="h3-pl">Ultimos Resultados</h3>
+        <p>Sabado 16, Septiembre</p>  
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Resultado</th>
+                    <th scope="col">Local</th>
+                    <th scope="col">Visita</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1 - 3</th>
+                    <td>Wolverhampton</td>
+                    <td>Liverpool</td>
+                </tr>
+                <tr>
+                    <th scope="row">2 - 1</th>
+                    <td>Tottenham Hotspur</td>
+                    <td>Sheffield United</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="container">
+        <h3 class="h3-pl">Ultimos Resultados</h3>
+        <p>Domingo 17, Septiembre</p>        
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Resultado</th>
+                <th scope="col">Local</th>
+                <th scope="col">Visita</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0 - 1</th>
+                <td>Everton</td>
+                <td>Arsenal</td>
+              </tr>
+              <tr>
+                <th scope="row">0 - 0</th>
+                <td>Bournemouth</td>
+                <td>Chelsea</td>
+              </tr>
+            </tbody>
+          </table>
+    </section>
     <footer>
-        <h3 class="text-center">Visita nuestras redes sociales</h3>
+        <h3 class="text-center">Conoce nuestras redes sociales</h3>
 
         <div class="d-flex justify-content-center">
             <a href="https://www.instagram.com/premierleague" target="_blank" class="a-rrss me-5">
-                <i class="bi bi-instagram"></i>
+                <i class="bi bi-instagram bi-color"></i>
             </a>
 
             <a href="https://twitter.com/premierleague" target="_blank" class="a-rrss me-5">
-                <i class="bi bi-twitter"></i>
+                <i class="bi bi-twitter bi-color"></i>
             </a>
 
             <a href="https://www.youtube.com/premierleague" target="_blank" class="a-rrss me-5">
-                <i class="bi bi-youtube"></i>
+                <i class="bi bi-youtube bi-color"></i>
             </a>
         </div>
     </footer>
