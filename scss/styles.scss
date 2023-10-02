@@ -7,13 +7,13 @@
     } */
 
     body{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: $fuente-principal;
     }
     
     .nav-link:hover{
         text-decoration: none;
         color: $color-primario;
-        background-color: white;
+        background-color: $color-secundario;
         font-size: 16px;
         border-radius: 10px;
     }
@@ -33,35 +33,24 @@
     }
     
     header{
-        padding: 10px 0;
-        position: sticky;
         top: 0;
         display: flex;
-        justify-content: space-evenly;
-        /* flex-wrap: wrap; */
         align-items: flex-end;
-        background-color: $color-primario;
         width: 100%;
-        z-index: 1;
-    }
-    
-    header img{
-        /* display: ; */
-        justify-content: space-between;
-    }
+        @include header-footer();
+
+        img{
+            justify-content: space-between;
+        }
+    }   
     
     
     footer{
-        background-color: $color-primario;
-        padding: 10px 0;
         padding-bottom: 20px;
-        position: sticky;
-        justify-content: space-evenly;
         flex-wrap: wrap;
         bottom: 0;
-        z-index: 1;
-        color: white;
         margin: 0;
+        @include header-footer();
     }
     
     .h3-pl{
@@ -69,7 +58,7 @@
     }
     
     .bi-color{
-        color: white;
+        color: $color-secundario;
     }
     
     .logo-epl-main {
@@ -87,17 +76,16 @@
     }
     
     .bi-brid-cl{
-        color: white;
+        color: $color-secundario;
     }
     
     .nav-color{
         /* background-color: $color-primario; */
-        color: white;
-    }
-    
-    .nav-color a{
-        background-color: $color-primario;
-        color: white;
+        color: $color-secundario;
+        a{
+            background-color: $color-primario;
+            color: $color-secundario;
+        }
     }
     
     .a-rrss {
@@ -128,6 +116,12 @@
     .card-img-top{
         height: 200px;
         width: 300px;
+        filter: grayscale(0%);
+        transition: filter 0.2s;
+    
+        &:hover {
+            filter: grayscale(100%);
+        }
     }
     
     @media (max-width:767px) {

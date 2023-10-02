@@ -1,3 +1,7 @@
+/** Archivo Variables **/
+/* Paleta de colores */
+/*FUENTE PRINCIPAL*/
+/*Mixins*/
 /* *{
         padding: 0;
         margin: 0;
@@ -10,7 +14,7 @@ body {
 .nav-link:hover {
   text-decoration: none;
   color: #37003c;
-  background-color: white;
+  background-color: #fff;
   font-size: 16px;
   border-radius: 10px;
 }
@@ -29,34 +33,32 @@ img {
   }
 }
 header {
-  padding: 10px 0;
-  position: sticky;
   top: 0;
   display: flex;
-  justify-content: space-evenly;
-  /* flex-wrap: wrap; */
   align-items: flex-end;
-  background-color: #37003c;
   width: 100%;
+  background-color: #37003c;
+  padding: 10px 0;
+  position: sticky;
   z-index: 1;
+  color: #fff;
+  justify-content: space-evenly;
 }
-
 header img {
-  /* display: ; */
   justify-content: space-between;
 }
 
 footer {
-  background-color: #37003c;
-  padding: 10px 0;
   padding-bottom: 20px;
-  position: sticky;
-  justify-content: space-evenly;
   flex-wrap: wrap;
   bottom: 0;
-  z-index: 1;
-  color: white;
   margin: 0;
+  background-color: #37003c;
+  padding: 10px 0;
+  position: sticky;
+  z-index: 1;
+  color: #fff;
+  justify-content: space-evenly;
 }
 
 .h3-pl {
@@ -64,7 +66,7 @@ footer {
 }
 
 .bi-color {
-  color: white;
+  color: #fff;
 }
 
 .logo-epl-main {
@@ -82,17 +84,16 @@ nav {
 }
 
 .bi-brid-cl {
-  color: white;
+  color: #fff;
 }
 
 .nav-color {
   /* background-color: $color-primario; */
-  color: white;
+  color: #fff;
 }
-
 .nav-color a {
   background-color: #37003c;
-  color: white;
+  color: #fff;
 }
 
 .a-rrss {
@@ -122,6 +123,11 @@ th {
 .card-img-top {
   height: 200px;
   width: 300px;
+  filter: grayscale(0%);
+  transition: filter 0.2s;
+}
+.card-img-top:hover {
+  filter: grayscale(100%);
 }
 
 @media (max-width: 767px) {
