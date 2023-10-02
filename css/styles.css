@@ -1,148 +1,145 @@
-    /* *{
+/* *{
         padding: 0;
         margin: 0;
         background-color: rgb(247, 244, 241);
     } */
-
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.nav-link:hover{
-    text-decoration: none;
-    color: #37003c;
-    background-color: white;
-    font-size: 16px;
-    border-radius: 10px;
+.nav-link:hover {
+  text-decoration: none;
+  color: #37003c;
+  background-color: white;
+  font-size: 16px;
+  border-radius: 10px;
 }
 
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
-.carousel-item img{
-    height: 50vh;
+.carousel-item img {
+  height: 50vh;
 }
 
-@media (min-width: 320px){
-    #carouselExampleAutoplaying{
-        width: 100%;
-    }
-}
-
-header{
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-evenly;
-    /* flex-wrap: wrap; */
-    align-items: flex-end;
-    background-color: #37003c;
+@media (min-width: 320px) {
+  #carouselExampleAutoplaying {
     width: 100%;
-    z-index: 1;
+  }
+}
+header {
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  align-items: flex-end;
+  background-color: #37003c;
+  width: 100%;
+  z-index: 1;
 }
 
-header img{
-    /* display: ; */
-    justify-content: space-between;
+header img {
+  /* display: ; */
+  justify-content: space-between;
 }
 
-
-footer{
-    background-color: #37003c;
-    padding: 10px 0;
-    padding-bottom: 20px;
-    position: sticky;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    bottom: 0;
-    z-index: 1;
-    color: white;
-    margin: 0;
+footer {
+  background-color: #37003c;
+  padding: 10px 0;
+  padding-bottom: 20px;
+  position: sticky;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  bottom: 0;
+  z-index: 1;
+  color: white;
+  margin: 0;
 }
 
-.h3-pl{
-    color: #37003c;
+.h3-pl {
+  color: #37003c;
 }
 
-.bi-color{
-    color: white;
+.bi-color {
+  color: white;
 }
 
 .logo-epl-main {
-    height: 60px;
-    margin: 0 auto;
-    margin-left: 5px;
-    margin-top: 3px;
-    background-color: #37003c;
+  height: 60px;
+  margin: 0 auto;
+  margin-left: 5px;
+  margin-top: 3px;
+  background-color: #37003c;
 }
 
-nav{
-    background-color: #37003c;
-    height: 100%;
-    position: sticky;
+nav {
+  background-color: #37003c;
+  height: 100%;
+  position: sticky;
 }
 
-.bi-brid-cl{
-    color: white;
+.bi-brid-cl {
+  color: white;
 }
 
-.nav-color{
-    /* background-color: #37003c; */
-    color: white;
+.nav-color {
+  /* background-color: $color-primario; */
+  color: white;
 }
 
-.nav-color a{
-    background-color: #37003c;
-    color: white;
+.nav-color a {
+  background-color: #37003c;
+  color: white;
 }
 
 .a-rrss {
-    color: #37003c;
-    font-size: large;
+  color: #37003c;
+  font-size: large;
 }
 
-.pl-color{
-    background-color: #37003c!important
-    ;
+.pl-color {
+  background-color: #37003c !important;
 }
 
-th{
-    width: 200px;
+th {
+  width: 200px;
 }
 
 .container-cards {
-    display: flex;
-    align-items:flex-start;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
 }
 
 .card {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-.card-img-top{
-    height: 200px;
-    width: 300px;
+.card-img-top {
+  height: 200px;
+  width: 300px;
 }
 
-@media (max-width:767px) {
-    .container-cards {
-        flex-direction: column;
-    }
-    .card{
-        width: 100%;
-    }
+@media (max-width: 767px) {
+  .container-cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+}
+.team-logo-img {
+  width: 100px;
+  position: relative;
+  margin-top: 10px;
 }
 
-.team-logo-img{
-    width: 100px;
-    position: relative;
-    margin-top: 10px;
+.team-logo-img:hover {
+  width: 120px;
 }
 
-.team-logo-img:hover{
-    width: 120px;
-}
+/*# sourceMappingURL=styles.css.map */
