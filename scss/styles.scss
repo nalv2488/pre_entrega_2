@@ -1,144 +1,145 @@
 @import "variables";
+@import "stadium";
 
-/* *{
-        padding: 0;
-        margin: 0;
-        background-color: rgb(247, 244, 241);
-    } */
 
-    body{
-        font-family: $fuente-principal;
-    }
-    
-    .nav-link:hover{
-        text-decoration: none;
-        color: $color-primario;
-        background-color: $color-secundario;
-        font-size: 16px;
-        border-radius: 10px;
-    }
-    
-    img{
-        max-width: 100%;
-    }
-    
-    .carousel-item img{
-        height: 50vh;
-    }
-    
-    @media (min-width: 320px){
-        #carouselExampleAutoplaying{
-            width: 100%;
-        }
-    }
-    
-    header{
-        top: 0;
-        display: flex;
-        align-items: flex-end;
+body{
+    font-family: $fuente-principal;
+}
+
+h1{
+    color: $color-primario;
+}
+
+.nav-link:hover{
+    text-decoration: none;
+    color: $color-primario;
+    background-color: $color-secundario;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.carousel-item img{
+    height: 50vh;
+}
+
+@media (max-width: $smartphone){
+    #carouselExampleAutoplaying{
         width: 100%;
-        @include header-footer();
+        
+    }
+}
 
-        img{
-            justify-content: space-between;
-        }
-    }   
-    
-    
-    footer{
-        padding-bottom: 20px;
-        flex-wrap: wrap;
-        bottom: 0;
-        margin: 0;
-        @include header-footer();
+header{
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    @include header-footer();
+
+    img{
+        justify-content: space-between;
     }
-    
-    .h3-pl{
-        color: $color-primario;
-    }
-    
-    .bi-color{
-        color: $color-secundario;
-    }
-    
-    .logo-epl-main {
-        height: 60px;
-        margin: 0 auto;
-        margin-left: 5px;
-        margin-top: 3px;
+}   
+
+
+footer{
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    bottom: 0;
+    margin: 0;
+    @include header-footer();
+}
+
+.h3-pl{
+    color: $color-primario;
+}
+
+.bi-color{
+    color: $color-secundario;
+}
+
+.logo-epl-main {
+    height: 60px;
+    margin: 0 auto;
+    margin-left: 5px;
+    margin-top: 3px;
+    background-color: $color-primario;
+}
+
+nav{
+    background-color: $color-primario;
+    height: 100%;
+    position: sticky;
+}
+
+.bi-brid-cl{
+    color: $color-secundario;
+}
+
+.nav-color{
+    /* background-color: $color-primario; */
+    color: $color-secundario;
+    a{
         background-color: $color-primario;
-    }
-    
-    nav{
-        background-color: $color-primario;
-        height: 100%;
-        position: sticky;
-    }
-    
-    .bi-brid-cl{
         color: $color-secundario;
     }
-    
-    .nav-color{
-        /* background-color: $color-primario; */
-        color: $color-secundario;
-        a{
-            background-color: $color-primario;
-            color: $color-secundario;
-        }
+}
+
+.a-rrss {
+    color: $color-primario;
+    font-size: large;
+}
+
+.pl-color{
+    background-color: $color-primario!important
+    ;
+}
+
+th{
+    width: 200px;
+}
+
+.container-cards {
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    max-width: 100%;
+}
+
+.card-img-top{
+    height: 200px;
+    width: 300px;
+    filter: grayscale(0%);
+    transition: filter 0.2s;
+
+    &:hover {
+        filter: grayscale(100%);
     }
-    
-    .a-rrss {
-        color: $color-primario;
-        font-size: large;
-    }
-    
-    .pl-color{
-        background-color: $color-primario!important
-        ;
-    }
-    
-    th{
-        width: 200px;
-    }
-    
+}
+
+@media (max-width:$tablet) {
     .container-cards {
-        display: flex;
-        align-items:flex-start;
-        justify-content: center;
-        gap: 20px;
+        flex-direction: column;
     }
-    
-    .card {
-        max-width: 100%;
+    .card{
+        width: 100%;
     }
-    
-    .card-img-top{
-        height: 200px;
-        width: 300px;
-        filter: grayscale(0%);
-        transition: filter 0.2s;
-    
-        &:hover {
-            filter: grayscale(100%);
-        }
-    }
-    
-    @media (max-width:767px) {
-        .container-cards {
-            flex-direction: column;
-        }
-        .card{
-            width: 100%;
-        }
-    }
-    
-    .team-logo-img{
-        width: 100px;
-        position: relative;
-        margin-top: 10px;
-    }
-    
-    .team-logo-img:hover{
-        width: 120px;
-    }
+}
+
+.team-logo-img{
+    width: 100px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.team-logo-img:hover{
+    width: 120px;
+}

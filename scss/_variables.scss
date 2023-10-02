@@ -6,11 +6,16 @@
 $color-primario: #37003c;
 $color-secundario: #fff;
 
-/*FUENTE PRINCIPAL*/
+/*Fuente Principal*/
 
 $fuente-principal: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+/*Resoluciones de Pantalla*/
+$smartphone: 320px;
+$tablet: 767px;
+
 /*Mixins*/ 
+
 @mixin header-footer{
     background-color: $color-primario;
     padding: 10px 0;

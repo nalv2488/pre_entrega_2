@@ -1,0 +1,29 @@
+
+.div-stadium{
+    border-left: #000000;
+    margin-left: 5px;
+    margin-bottom: 10px;
+
+    h3{
+        margin-bottom: 25px;
+        color: $color-primario;
+    }
+
+    p{
+        color: $color-primario;
+    }
+}
+
+.stadium-img {
+    width: 200px;
+    height: 100px;
+
+    // &:hover {
+    transform: scale(1);
+        &.aos-animate {
+        transform: scale(1.5);
+        transition: transform 0.5s;
+    width: 600px;
+    height: 300px;
+    }
+}
