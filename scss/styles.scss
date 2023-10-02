@@ -26,6 +26,11 @@ img{
     height: 50vh;
 }
 
+.carousel{
+    padding-bottom: $espaciado-general - 5;
+    
+}
+
 @media (max-width: $smartphone){
     #carouselExampleAutoplaying{
         width: 100%;
