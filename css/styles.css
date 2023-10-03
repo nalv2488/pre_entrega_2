@@ -41,6 +41,18 @@
   color: #37003c;
 }
 
+.p-team-description {
+  color: #37003c;
+}
+
+.team-logo-img {
+  width: 100px;
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  padding: 5px;
+}
+
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
