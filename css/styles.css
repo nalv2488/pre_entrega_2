@@ -33,6 +33,14 @@
   border-radius: 5px;
 }
 
+.p-history-origins {
+  color: #37003c;
+}
+
+.p-rules-tournament {
+  color: #37003c;
+}
+
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
